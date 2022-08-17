@@ -1,0 +1,61 @@
+.poke-card {
+  position: relative;
+  height: 115px;
+  width: 334px;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+.poke-card-container { 
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.poke-number {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 700;
+  color: #17171B99;
+}
+
+.poke-name {
+  margin-bottom: 5px;
+  font-size: 26px;
+  line-height: 31px;
+  font-weight: 700;
+  color: #FFF;
+}
+
+.poke-img {
+  position: absolute;
+  top: -25px;
+  right: 10px;
+  display: block;
+  height: 130px;
+  width: 130px;
+}
+
+.poke-card-pat6 {
+  position: absolute;
+  top: 5px;
+  left: 90px;
+  height: 32px;
+  width: 74px;
+  fill: rgba(255,255,255, 0.3);
+  z-index: 0;
+}
+
+.poke-card-pokeball {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 145px;
+  height: 145px;
+  fill: rgba(255,255,255, 0.3);
+  z-index: 0;
+}
