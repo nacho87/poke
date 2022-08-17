@@ -1,0 +1,18 @@
+.label {
+  display: inline-block;
+  height: 25px;
+  padding: 5px;
+  margin-right: 5px;
+  border-radius: 3px;
+  color: white;
+  text-transform: capitalize;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.label-svg {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  fill: white;
+}
