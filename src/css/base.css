@@ -1,0 +1,81 @@
+:root {
+  --type-bug: #8CB330;
+  --type-dark: #58575F;
+  --type-dragon: #0F6AC0;
+  --type-electric: #EED535;
+  --type-fairy: #ED6EC7;
+  --type-fighting: #D04164;
+  --type-fire: #FD7D24;
+  --type-flying: #748FC9;
+  --type-ghost: #556AAE;
+  --type-grass: #62B957;
+  --type-ground: #DD7748;
+  --type-ice: #61CEC0;
+  --type-normal: #9DA0AA;
+  --type-poison: #A552CC;
+  --type-psychic: #EA5D60;
+  --type-rock: #BAAB82;
+  --type-steel: #417D9A;
+  --type-water: #4A90DA;
+
+  --type-bg-bug: #8BD674;
+  --type-bg-dark: #6F6E78;
+  --type-bg-dragon: #7383B9;
+  --type-bg-electric: #F2CB55;
+  --type-bg-fairy: #EBA8C3;
+  --type-bg-fighting: #EB4971;
+  --type-bg-fire: #FFA756;
+  --type-bg-flying: #83A2E3;
+  --type-bg-ghost: #8571BE;
+  --type-bg-grass: #8BBE8A;
+  --type-bg-ground: #F78551;
+  --type-bg-ice: #91D8DF;
+  --type-bg-normal: #B5B9C4;
+  --type-bg-poison: #9F6E97;
+  --type-bg-psychic: #FF6568;
+  --type-bg-rock: #D4C294;
+  --type-bg-steel: #4C91B3;
+  --type-bg-water: #58ABF6;
+
+  --size-short: #FFC5E6;
+  --size-medium: #AEBFD7;
+  --size-tall: #AAACB8;
+
+  --size-light: #99CD7C;
+  --size-normal: #57B2DC;
+  --size-heavy: #5A92A5;
+}
+
+@font-face {
+  font-family: 'SF-Pro-Display';
+  src: url('../assets/fonts/sf-pro-display-regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF-Pro-Display';
+  src: url('../assets/fonts/sf-pro-display-medium.ttf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF-Pro-Display';
+  src: url('../assets/fonts/sf-pro-display-bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'SF-Pro-Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'SF-Pro-Display',
+  sans-serif;
+}
