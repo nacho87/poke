@@ -1,0 +1,13 @@
+.poke-header-nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.poke-header-nav-item {
+  width: 20px;
+  height: 20px;
+  fill: var(--color-secondary);
+  cursor: pointer;
+}
