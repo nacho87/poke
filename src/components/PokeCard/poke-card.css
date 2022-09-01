@@ -29,6 +29,7 @@
   line-height: 31px;
   font-weight: 700;
   color: #FFF;
+  text-transform: capitalize;
 }
 
 .poke-img {
