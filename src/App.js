@@ -9,32 +9,26 @@ import PokeCard from './components/PokeCard/PokeCard'
 
 function App() {
   const [data, setData] = useState([]);
+  const [next, setNext] = useState('https://pokeapi.co/api/v2/pokemon/');
 
-  let next;
-
+  function getData() {
+    fetch(next)
+      .then(response => response.json())
+      .then(poke => {
+        setNext(poke.next);
+        setData([...data, ...poke.results])
+      });
+  }
  
   useEffect(() => {
-    fetch('https://pokeapi.co/api/v2/pokemon/')
-      .then(response => response.json())
-      .then(data => {
-        next = data.next;
-        setData(data.results)
-      });
+    getData()
   },[])
 
   function obCallback(payload) {
     console.log('nacho', payload[0].intersectionRatio);
     if (payload[0].intersectionRatio > 0) {
       console.log('next', next)
-      fetch(next)
-        .then(response => response.json())
-        .then(newData => {
-          next = newData.next;
-          const localData = newData.results;
-          const newArrayData = localData.map(item => data.push(item))
-          console.log('newArrayData', newArrayData)
-          setData(data.concat(localData))
-        });
+      getData()
     }
   }
 
